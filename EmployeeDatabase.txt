@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS `itelotdataload`;
+USE `itelotdataload`;
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(5) NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  `designation` varchar(100) NOT NULL,
+  PRIMARY KEY (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+
+INSERT INTO `employees` (`employee_id`, `name`, `designation``) VALUES
+	(1, 'Abhilash', 'Software Engineer'),
+	(2, 'John', 'Software Engineer'),
+	(3, 'Rebecca', 'QA'); 
+	
+	
+	
+	
+INSERT INTO employees (employee_id, name, designation) VALUES
+	(1, 'Abhilash', 'Software Engineer')
